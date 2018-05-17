@@ -7,16 +7,19 @@ public_folder: "/img/uploads" # The src attribute for uploaded media will begin 
 
 
 collections:
-  - name: "about"
-    label: "About"
-    file: "source/_data/about.yml"
-    format: yml
-    fields:
-      - {label: "Page Header", name: "page-header", widget: "string"}
-      - label: Sections
-        name: section
-        widget: list
-        fields:
-          - {label: "Section Header", name: "section-header", widget: "string"}
-          - {label: "Section Text", name: "section-text", widget: "markdown"}
-          - {labedl: "Section Image", name" "section-image", widget: "image"}
+  - label: "Pages"
+    name: "pages"
+    files:
+    - name: "about"
+      label: "About"
+      file: "source/_data/about.yml"
+      format: yml
+      fields:
+        - {label: "Page Header", name: "page-header", widget: "string"}
+        - label: Sections
+          name: section
+          widget: list
+          fields:
+            - {label: "Section Header", name: "section-header", widget: "string"}
+            - {label: "Section Text", name: "section-text", widget: "markdown"}
+            - {labedl: "Section Image", name" "section-image", widget: "image"}
