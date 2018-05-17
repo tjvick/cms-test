@@ -1,8 +1,15 @@
-- header: "Our Mission"
-  content: "Example mission statement"
+page-header: About Us
+section:
+  - section-header: Our Mission
+    section-text: >-
+      Our mission is simple, to "Excite your taste spuds!" We provide excitement
+      through our diligence to quality, consistency and value in every product
+      we serve. We strive to:
 
-- header: "Our Story"
-  content: "Example mission statement"
 
-- header: "Our Culture"
-  content: "Example mission statement"
+      * Bring the potato to its rightful place in the food chain.
+
+      * Inspire more complete nutritional choices worldwide.
+
+      * Make a difference in our community.
+    undefined: /img/uploads/101_0923.jpg
