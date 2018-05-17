@@ -15,16 +15,16 @@ collections:
       file: "source/_data/about.yml"
       format: yml
       fields:
-        - {label: "Page Header", name: "page-header", widget: "string"}
+        - {label: "Page Header", name: "page-header", widget: string}
         - label: Sections
           name: sections
           widget: list
           fields:
-            - {label: "Section Header", name: "header", widget: "string"}
-            - {label: "Section Text", name: "text", widget: "markdown"}
+            - {label: "Section Header", name: "header", widget: string}
+            - {label: "Section Text", name: "text", widget: markdown}
             - label: "Section Image"
               name: "image"
-              widget: "list"
+              widget: list
               fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Alt Text", name: "alt", widget: "string"}

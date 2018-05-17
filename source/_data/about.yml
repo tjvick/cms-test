@@ -12,5 +12,6 @@ sections:
       * Inspire more complete nutritional choices worldwide.
 
       * Make a difference in our community.
-    image: /img/uploads/101_0923.jpg
-    image-alt: mission
+    image:
+      - src: /img/uploads/101_0923.jpg
+        alt: mission
