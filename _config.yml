@@ -44,3 +44,4 @@ markdown: kramdown
 
 source: source
 destination: _site
+data_dir: _data
