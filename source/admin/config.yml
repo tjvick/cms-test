@@ -24,7 +24,7 @@ collections:
             - {label: "Section Text", name: "text", widget: markdown}
             - label: "Section Image"
               name: "image"
-              widget: list
+              widget: object
               fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Alt Text", name: "alt", widget: "string"}

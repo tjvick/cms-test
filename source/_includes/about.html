@@ -1,10 +1,10 @@
 <div class="about" id="about">
 
   <div class="about header">
-    <h1> About Us </h1>
+    <h1> {{ site.data.about["page-header"] }} </h1>
   </div>
 
-  <section class="mission">
+  <!-- <section class="mission">
     <div class="graphic top">
       <img src="/img/customers-0.jpg" alt="Happy Customers" width="800px" height="533px">
     </div>
@@ -46,13 +46,17 @@
         to learning from our experience and developing a community that approaches customer with "old school" customer service.
       </p>
     </div>
-  </section>
+  </section> -->
 
   {% for section in site.data.about["sections"] %}
-
+    {% assign mod = forloop.index0 | modulo: 2 %}
+    {% if mod == 0 %}
   <section>
+    {% else %}
+  <section class="reverse">
+    {% endif %}
     <div class="graphic top">
-      <img src="{{ section.image }}" alt="{{ section.image-alt }}">
+      <img src="{{ section.image.src }}" alt="{{ section.image.alt }}">
     </div>
     <div class="text">
       <h2>{{ section.header }}</h2>

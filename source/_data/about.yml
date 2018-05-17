@@ -2,8 +2,8 @@ page-header: About Us
 sections:
   - header: Our Mission
     image:
-      - alt: Happy customers enjoying fries.
-        src: /img/uploads/3671421_1426094871.9248.jpg
+      alt: Happy customers enjoying fries.
+      src: /img/uploads/3671421_1426094871.9248.jpg
     text: >-
       Our mission is simple, to "Excite your taste spuds!" We provide excitement
       through our diligence to quality, consistency and value in every product
@@ -17,15 +17,16 @@ sections:
       * Make a difference in our community.
   - header: Our Story
     image:
-      - alt: Owner Dan McCarthy
-        src: /img/uploads/11011466_741296709316455_3166170576682155087_n.jpg
+      alt: Owner Dan McCarthy
+      src: /img/uploads/11011466_741296709316455_3166170576682155087_n.jpg
     text: >-
       Daniel McCarthy saw all the burger and hot dog choices around Columbus and
       felt it was past time to tout the most popular side dish for those meals —
       the ’tater.
   - header: Our Culture
     image:
-      - src: /img/uploads/664cd36c861307d6dbef8fa4d9c1303e.jpeg
+      alt: Happy Employees
+      src: /img/uploads/664cd36c861307d6dbef8fa4d9c1303e.jpeg
     text: >-
       We strive to nurture our team and build value in our relationship with
       ourselves and the community we serve. We are open to learning from our
