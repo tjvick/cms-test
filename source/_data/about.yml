@@ -1,7 +1,7 @@
 page-header: About Us
-section:
-  - section-header: Our Mission
-    section-text: >-
+sections:
+  - header: Our Mission
+    text: >-
       Our mission is simple, to "Excite your taste spuds!" We provide excitement
       through our diligence to quality, consistency and value in every product
       we serve. We strive to:
@@ -12,4 +12,5 @@ section:
       * Inspire more complete nutritional choices worldwide.
 
       * Make a difference in our community.
-    undefined: /img/uploads/101_0923.jpg
+    image: /img/uploads/101_0923.jpg
+    image-alt: mission

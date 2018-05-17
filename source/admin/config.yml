@@ -17,9 +17,14 @@ collections:
       fields:
         - {label: "Page Header", name: "page-header", widget: "string"}
         - label: Sections
-          name: section
+          name: sections
           widget: list
           fields:
-            - {label: "Section Header", name: "section-header", widget: "string"}
-            - {label: "Section Text", name: "section-text", widget: "markdown"}
-            - {labedl: "Section Image", name" "section-image", widget: "image"}
+            - {label: "Section Header", name: "header", widget: "string"}
+            - {label: "Section Text", name: "text", widget: "markdown"}
+            - label: "Section Image"
+              name: "image"
+              widget: "list"
+              fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string"}

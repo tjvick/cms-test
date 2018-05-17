@@ -9,9 +9,6 @@
       <img src="/img/customers-0.jpg" alt="Happy Customers" width="800px" height="533px">
     </div>
     <div class="text">
-      {% for section in site.data.about %}
-      <h2>{{ section.header }}</h2>
-      {% endfor %}
       <h2>Our Mission</h2>
       <p>
         Our mission is simple, to "Excite your taste spuds!" We provide excitement through our diligence to quality, consistency
@@ -50,5 +47,19 @@
       </p>
     </div>
   </section>
+
+  {% for section in site.data.about["sections"] %}
+
+  <section>
+    <div class="graphic top">
+      <img src="{{ section.image }}" alt="{{ section.image-alt }}">
+    </div>
+    <div class="text">
+      <h2>{{ section.header }}</h2>
+      {{ section.text | markdownify }}
+    </div>
+  </section>
+
+  {% endfor %}
 
 </div>
