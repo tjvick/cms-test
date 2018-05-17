@@ -8,6 +8,12 @@ public_folder: "/img/uploads" # The src attribute for uploaded media will begin 
 
 collections:
   - name: "about"
-    label: "About"
-    folder: "about"
+    folder: "source/about"
     create: false
+    delete: false
+    fields:
+      - name: "test-id"
+        label: "Test ID"
+        widget: "string"
+        default: "this is a test"
+        required: true
