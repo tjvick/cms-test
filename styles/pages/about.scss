@@ -1,0 +1,131 @@
+$font-family-header: 'Overlock', cursive;
+$font-family-text: 'Catamaran', sans-serif;
+$font-family-script: 'Nothing You Could Do', cursive;
+
+// Colors
+$color-black: hsla(0, 0%, 0%, 0.9);
+$color-darkgray: hsla(0, 0%, 0%, 0.7);
+$color-gray: hsla(0, 0%, 0%, 0.5);
+$color-lightgray: hsla(0, 0%, 0%, 0.3);
+$color-lightergray: hsla(0, 0%, 0%, 0.15);
+$color-faintgray: hsla(0, 0%, 0%, 0.05);
+$color-darkorange: hsla(24, 90%, 30%, 1.0);
+$color-orange: hsla(24, 72%, 55%, 1.0);
+$color-orange-offset: hsla(24, 45%, 62%, 1.0);
+$color-lightorange: hsla(24, 15%, 85%, 1);
+$color-yellow: hsla(40, 50%, 70%, 1.0);
+$color-green: hsla(95, 50%, 30%, 1.0);
+$color-darkgreen: hsla(95, 70%, 15%, 1.0);
+
+// Breakpoints (screen widths)
+$breakpoint-tablet: 601px;
+$breakpoint-half: 801px;
+$breakpoint-full: 1040px;
+$breakpoint-full-large: 1400px;
+$breakpoint-header: 1120px;
+
+$content-width: 90%;
+
+// header footer heights
+$header-height: 14rem;
+$footer-min-height: 167px; // dependent on things
+
+.about {
+  .header h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-family: $font-family-header;
+    font-weight: normal;
+  }
+
+  section {
+    margin: 0 auto;
+    width: $content-width;
+    max-width: 110rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    &.wrap-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .text,
+    .graphic {
+      flex: 1;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 1.5em;
+    }
+
+    .text {
+      text-align: justify;
+
+      h2 {
+        margin: 0 auto;
+        font-family: $font-family-header;
+        font-weight: bold;
+      }
+    }
+
+    .graphic {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .bottom {
+      display: none;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $breakpoint-half) {
+  .about section {
+    margin: 0 auto;
+    width: $content-width;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+    &.wrap-reverse {
+      flex-direction: row;
+    }
+
+    .text,
+    .graphic {
+      flex: 1;
+      // min-width: 45rem;
+      box-sizing: border-box;
+      padding: 0 1.5em;
+    }
+
+    .text {
+      text-align: justify;
+
+      h2 {
+        margin: 0 auto;
+      }
+    }
+
+    .graphic {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .bottom {
+      display: none;
+    }
+  }
+}
